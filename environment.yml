@@ -1,8 +1,6 @@
 name: mllm
 channels:
-  - defaults
-  - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
-  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - defaults  
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
@@ -181,4 +179,3 @@ dependencies:
     - xxhash==3.4.1
     - yarl==1.9.4
     - zipp==3.17.0
-prefix: /root/miniconda3/envs/minigptv

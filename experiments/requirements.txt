@@ -1,0 +1,9 @@
+timm
+bitsandbytes
+accelerate
+transformers
+wandb
+omegaconf
+opencv-python
+pandas
+peft

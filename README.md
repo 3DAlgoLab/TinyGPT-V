@@ -127,14 +127,14 @@ To perfer more powerful model, LLMs loads as 16 bit by default. This configurati
 To more save GPU memory, you can run the model
 in 8 bit below 8G device by setting `low_resource` to `True` in the relevant config file:
 
-* Stage 4 [tinygptv_stage4_eval.yaml](eval_configs/tinygptv_stage4_eval.yaml#6) 
+* Stage 4 [tinygptv_stage4_eval.yaml](eval_configs/tinygptv_stage4_eval.yaml#L6) 
 
-* Stage 1, 2 and 3 [tinygptv_stage1_2_3_eval.yaml](eval_configs/tinygptv_stage1_2_3_eval.yaml#6) 
+* Stage 1, 2 and 3 [tinygptv_stage1_2_3_eval.yaml](eval_configs/tinygptv_stage1_2_3_eval.yaml#L6) 
 
 
 ### Training
 
-First you need to adjust all the updated weights in the LLM to be calculated with full precision:[Here](minigpt4\models\base_model.py). Remove the comments from the following lines:
+First you need to adjust all the updated weights in the LLM to be calculated with full precision:[Here](minigpt4/models/base_model.py). Remove the comments from the following lines:
 
 ```
                 layer.self_attn.q_layernorm.weight.data = layer.self_attn.q_layernorm.weight.data.float()
